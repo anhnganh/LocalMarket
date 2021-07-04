@@ -4,7 +4,7 @@
       <img src="../assets/localmarket.png" style="width:150px" alt="" />
     </div>
     <div class="banHang">
-      <router-link to="/about">Bán hàng</router-link>
+      <router-link to="/nguoiban">Bán hàng</router-link>
     </div>
     <div class="search">
       <!-- <input type="text" placeholder="Tìm kiếm sản phẩm, gian hàng..." />  -->

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 // import About from '../views/NguoiBan.vue'
+import ManagerShop from '../views/user/ManagerShop.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -17,6 +18,11 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import("@/views/NguoiBan.vue")
+  },
+  {
+    path:'/managershop',
+    name: 'ManagerShop',
+    component: ManagerShop
   }
 ]
 
