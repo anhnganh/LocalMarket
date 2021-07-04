@@ -2,7 +2,10 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 // import About from '../views/NguoiBan.vue'
-import ManagerShop from '../views/user/ManagerShop.vue'
+import ManagerShop from '../views/admin/ManagerShop.vue'
+import Contact from '../views/user/Contact.vue'
+import productList from '../views/user/ProductList'
+import NewList from '../views/user/NewList.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -23,7 +26,23 @@ const routes = [
     path:'/managershop',
     name: 'ManagerShop',
     component: ManagerShop
+  },
+  {
+    path:'/contact',
+    name:'Contact',
+    component:Contact
+  },
+  {
+    path:'/productList',
+    name: 'productList',
+    component: productList
+  },
+  {
+    path:'/newlist',
+    name:NewList,
+    component: NewList
   }
+  
 ]
 
 const router = new VueRouter({

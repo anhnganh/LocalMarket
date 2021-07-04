@@ -20,7 +20,7 @@
                     Banh ngai Lang Son
                   </b-card-text>
 
-                  <b-button href="#" variant="primary">Add Cart</b-button>
+                  <b-button  variant="primary">Add Cart</b-button>
                   <b-text class="price">250.000đ</b-text>
                 </b-card>
               </li>
@@ -38,7 +38,7 @@
                   <b-card-text>
                     Banh dau xanh Hai Duong
                   </b-card-text>
-                  <b-button href="#" variant="primary">Add Cart</b-button>
+                  <b-button  variant="primary">Add Cart</b-button>
                   <b-text class="price">250.000đ</b-text>
                 </b-card>
               </li>
@@ -56,7 +56,7 @@
                   <b-card-text>
                     Banh dau xanh Hai Duong
                   </b-card-text>
-                  <b-button href="#" variant="primary">Add Cart</b-button>
+                  <b-button variant="primary">Add Cart</b-button>
                   <b-text class="price">250.000đ</b-text>
                 </b-card>
               </li>
@@ -73,7 +73,7 @@
                   <b-card-text>
                     Banh dau xanh Hai Duong
                   </b-card-text>
-                  <b-button href="#" variant="primary">Add Cart</b-button>
+                  <b-button variant="primary">Add Cart</b-button>
                   <b-text class="price">250.000đ</b-text>
                 </b-card>
               </li>
@@ -93,7 +93,7 @@
                   <b-card-text>
                     Banh dau xanh Hai Duong
                   </b-card-text>
-                  <b-button href="#" variant="primary">Add Cart</b-button>
+                  <b-button variant="primary">Add Cart</b-button>
                   <b-text class="price">250.000đ</b-text>
                 </b-card>
               </li>
@@ -111,7 +111,7 @@
                   <b-card-text>
                     Banh dau xanh Hai Duong
                   </b-card-text>
-                  <b-button href="#" variant="primary">Add Cart</b-button>
+                  <b-button  variant="primary">Add Cart</b-button>
                   <b-text class="price">250.000đ</b-text>
                 </b-card>
               </li>
@@ -129,7 +129,7 @@
                   <b-card-text>
                     Banh dau xanh Hai Duong
                   </b-card-text>
-                  <b-button href="#" variant="primary">Add Cart</b-button>
+                  <b-button variant="primary">Add Cart</b-button>
                   <b-text class="price">250.000đ</b-text>
                 </b-card>
               </li>
@@ -147,7 +147,7 @@
                   <b-card-text>
                     Banh dau xanh Hai Duong
                   </b-card-text>
-                  <b-button href="#" variant="primary">Add Cart</b-button>
+                  <b-button  variant="primary">Add Cart</b-button>
                   <b-text class="price">250.000đ</b-text>
                 </b-card>
               </li>
@@ -189,7 +189,7 @@
               <b-card-text>
                 Banh dau xanh Hai Duong
               </b-card-text>
-              <b-button href="#" variant="primary">Add Cart</b-button>
+              <b-button variant="primary">Add Cart</b-button>
               <b-text class="price">250.000đ</b-text>
             </b-card>
           </li>
@@ -207,7 +207,7 @@
               <b-card-text>
                 Banh dau xanh Hai Duong
               </b-card-text>
-              <b-button href="#" variant="primary">Add Cart</b-button>
+              <b-button  variant="primary">Add Cart</b-button>
               <b-text class="price">250.000đ</b-text>
             </b-card>
           </li>
@@ -225,7 +225,7 @@
               <b-card-text>
                 Banh dau xanh Hai Duong
               </b-card-text>
-              <b-button href="#" variant="primary">Add Cart</b-button>
+              <b-button  variant="primary">Add Cart</b-button>
               <b-text class="price">250.000đ</b-text>
             </b-card>
           </li>
@@ -243,7 +243,7 @@
               <b-card-text>
                 Banh dau xanh Hai Duong
               </b-card-text>
-              <b-button href="#" variant="primary">Add Cart</b-button>
+              <b-button  variant="primary">Add Cart</b-button>
               <b-text class="price">250.000đ</b-text>
             </b-card>
           </li>
@@ -263,7 +263,7 @@
               <b-card-text>
                 Banh dau xanh Hai Duong
               </b-card-text>
-              <b-button href="#" variant="primary">Add Cart</b-button>
+              <b-button  variant="primary">Add Cart</b-button>
               <b-text class="price">250.000đ</b-text>
             </b-card>
           </li>
@@ -281,7 +281,7 @@
               <b-card-text>
                 Banh dau xanh Hai Duong
               </b-card-text>
-              <b-button href="#" variant="primary">Add Cart</b-button>
+              <b-button variant="primary">Add Cart</b-button>
               <b-text class="price">250.000đ</b-text>
             </b-card>
           </li>
@@ -299,7 +299,7 @@
               <b-card-text>
                 Banh dau xanh Hai Duong
               </b-card-text>
-              <b-button href="#" variant="primary">Add Cart</b-button>
+              <b-button  variant="primary">Add Cart</b-button>
               <b-text class="price">250.000đ</b-text>
             </b-card>
           </li>
@@ -317,7 +317,7 @@
               <b-card-text>
                 Banh dau xanh Hai Duong
               </b-card-text>
-              <b-button href="#" variant="primary">Add Cart</b-button>
+              <b-button  variant="primary">Add Cart</b-button>
               <b-text class="price">250.000đ</b-text>
             </b-card>
           </li>
@@ -350,7 +350,7 @@
               <b-card-text>
                 Banh dau xanh Hai Duong
               </b-card-text>
-              <b-button href="#" variant="primary">Add Cart</b-button>
+              <b-button  variant="primary">Add Cart</b-button>
               <b-text class="price">250.000đ</b-text>
             </b-card>
           </li>
@@ -368,7 +368,7 @@
               <b-card-text>
                 Banh dau xanh Hai Duong
               </b-card-text>
-              <b-button href="#" variant="primary">Add Cart</b-button>
+              <b-button  variant="primary">Add Cart</b-button>
               <b-text class="price">250.000đ</b-text>
             </b-card>
           </li>
@@ -386,7 +386,7 @@
               <b-card-text>
                 Banh dau xanh Hai Duong
               </b-card-text>
-              <b-button href="#" variant="primary">Add Cart</b-button>
+              <b-button variant="primary">Add Cart</b-button>
               <b-text class="price">250.000đ</b-text>
             </b-card>
           </li>
@@ -404,7 +404,7 @@
               <b-card-text>
                 Banh dau xanh Hai Duong
               </b-card-text>
-              <b-button href="#" variant="primary">Add Cart</b-button>
+              <b-button variant="primary">Add Cart</b-button>
               <b-text class="price">250.000đ</b-text>
             </b-card>
           </li>
@@ -424,7 +424,7 @@
               <b-card-text>
                 Banh dau xanh Hai Duong
               </b-card-text>
-              <b-button href="#" variant="primary">Add Cart</b-button>
+              <b-button variant="primary">Add Cart</b-button>
               <b-text class="price">250.000đ</b-text>
             </b-card>
           </li>
@@ -442,7 +442,7 @@
               <b-card-text>
                 Banh dau xanh Hai Duong
               </b-card-text>
-              <b-button href="#" variant="primary">Add Cart</b-button>
+              <b-button variant="primary">Add Cart</b-button>
               <b-text class="price">250.000đ</b-text>
             </b-card>
           </li>
@@ -460,12 +460,12 @@
               <b-card-text>
                 Banh dau xanh Hai Duong
               </b-card-text>
-              <b-button href="#" variant="primary">Add Cart</b-button>
+              <b-button variant="primary">Add Cart</b-button>
               <b-text class="price">250.000đ</b-text>
             </b-card>
           </li>
         </b-col>
-        <b-col md="3">
+         <b-col md="3">
           <li>
             <b-card
               img-src="https://picsum.photos/600/300/?image=25"
@@ -478,7 +478,7 @@
               <b-card-text>
                 Banh dau xanh Hai Duong
               </b-card-text>
-              <b-button href="#" variant="primary">Add Cart</b-button>
+              <b-button variant="primary">Add Cart</b-button>
               <b-text class="price">250.000đ</b-text>
             </b-card>
           </li>
@@ -586,10 +586,17 @@ body {
 .listDoDung li .card .btn {
   background-color: #397e40;
   margin-right: 95px;
+    color: #fff;
+    height: 45px;
+    width: 100px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: Roboto;
 }
-
-.listDoDung li .card a:hover {
+.listDoDung li .card button:hover {
   background-color: orange;
+  font-family: 300;
 }
 .listDoDung .price {
   color: #ee9751;
@@ -642,6 +649,17 @@ body {
 .suggestions li .card .btn {
   background-color: #397e40;
   margin-right: 95px;
+   color: #fff;
+    height: 45px;
+    width: 100px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: Roboto;
+}
+.suggestions li .card button:hover {
+  background-color: orange;
+  font-family: 300;
 }
 .suggestions .price {
   color: #ee9751;

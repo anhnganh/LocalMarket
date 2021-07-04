@@ -4,7 +4,7 @@
       <b-nav-item>HÔM NAY</b-nav-item>
       <b-nav-item>GIAN HÀNG</b-nav-item>
       <b-nav-item>TIN TỨC</b-nav-item>
-      <b-nav-item>LIÊN HỆ</b-nav-item>
+      <b-nav-item  to="/contact">LIÊN HỆ</b-nav-item>
     </b-nav>
   </div>
 </template>
