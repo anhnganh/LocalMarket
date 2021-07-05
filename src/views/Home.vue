@@ -6,6 +6,7 @@
       <Cate />
       <Slide />
       <ListProd />
+     <Footer/>
    </div>
   </div>
 </template>
@@ -17,6 +18,7 @@ import Nav from '@/components/Nav.vue'
 import Cate from '@/components/Category.vue'
 import Slide from '@/components/Slide.vue'
 import ListProd from '@/components/ListProd.vue'
+import Footer from '@/components/Footer.vue'
 export default {
   name: 'Home',
   components: {
@@ -24,7 +26,8 @@ export default {
     Nav,
     Cate,
     Slide,
-    ListProd
+    ListProd,
+    Footer
   }
 }
 </script>

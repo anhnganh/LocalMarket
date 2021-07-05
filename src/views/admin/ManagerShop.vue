@@ -13,7 +13,7 @@
           <div class="add">
             <b-button @click="show2 = !show2">
               <b-icon icon="plus"></b-icon>
-              Thêm sản phẩm
+              Thêm Shop
             </b-button>
 
             <div class="addShop" id="idmodal" v-show="show2">
@@ -165,6 +165,7 @@ export default {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
+  z-index: 2;
 }
 .managershop .list .add .addShop form {
   background-color: #fefefe;

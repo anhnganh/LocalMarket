@@ -41,8 +41,8 @@ const routes = [
     path:'/newlist',
     name:NewList,     
     component: NewList
-  }
-  
+  },
+
 ]
 
 const router = new VueRouter({

@@ -219,7 +219,55 @@
   </div>
 </template>
 <script>
-export default {};
+import $ from "jquery";
+export default {
+  mounted(){
+    $(document).ready(function() {
+    
+    $('#table-wait-confirm').hide();
+    $('#table-wait-ship').hide();
+    $('#table-order-done').hide();
+    $('#table-dele-order').hide();
+
+    $('#all').click(function(){
+        $('#table-wait-confirm').hide();
+        $('#table-wait-ship').hide();
+        $('#table-order-done').hide();
+        $('#table-dele-order').hide();
+        $('#table-all').show();
+    });
+
+    $('#wait-confirm').click(function(){
+        $('#table-wait-confirm').show();
+        $('#table-wait-ship').hide();
+        $('#table-order-done').hide();
+        $('#table-dele-order').hide();
+        $('#table-all').hide();
+    });
+    $('#wait-ship').click(function(){
+        $('#table-wait-confirm').hide();
+        $('#table-wait-ship').show();
+        $('#table-order-done').hide();
+        $('#table-dele-order').hide();
+        $('#table-all').hide();
+    });
+    $('#order-done').click(function(){
+        $('#table-wait-confirm').hide();
+        $('#table-wait-ship').hide();
+        $('#table-order-done').show();
+        $('#table-dele-order').hide();
+        $('#table-all').hide();
+    });
+    $('#dele-order').click(function(){
+        $('#table-wait-confirm').hide();
+        $('#table-wait-ship').hide();
+        $('#table-order-done').hide();
+        $('#table-dele-order').show();
+        $('#table-all').hide();
+    });
+ });
+  }
+};
 </script>
 <style>
 body {

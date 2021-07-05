@@ -1,7 +1,7 @@
 <template>
     <div class="navbar-seller">
       <div class="menu-item">
-        <a href="#">
+        <a href="/nguoiban">
           <span><img src="@/assets/quanlydonhang.png" alt="icon"/></span>
           <span class="title-item">Quản lý đơn hàng</span>
         </a>
