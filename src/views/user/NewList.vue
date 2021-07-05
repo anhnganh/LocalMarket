@@ -6,6 +6,7 @@
     <div class="container">
       <Nav />
       <Category />
+      Tin tuc moi nhat
     </div>
     </div>
 </template>

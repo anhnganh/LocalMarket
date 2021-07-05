@@ -202,7 +202,7 @@ body {
   font-size: 20px;
 }
 .listProd li .card .btn {
-  background-color: #397e40;
+    background-color: #397e40;
     color: #fff;
     height: 45px;
     width: 100px;
