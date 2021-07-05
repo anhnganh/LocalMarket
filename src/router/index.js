@@ -61,6 +61,8 @@ const routes = [
     name: ShopDetail,
     component:ShopDetail
   }
+
+
 ]
 
 const router = new VueRouter({

@@ -268,7 +268,4 @@ input:checked + .slider:before {
 /* .managershop .list .navMenu {
   /* background-color: aqua; */
 
-.managershop .list .navMenu .Nav {
-  margin-top: 70px;
-}
 </style>

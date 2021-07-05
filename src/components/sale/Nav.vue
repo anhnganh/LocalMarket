@@ -13,7 +13,7 @@
         </a>
       </div>
       <div class="menu-item">
-        <a href="#">
+        <a href="/ProductManager">
           <span><img src="@/assets/quanlysanpham.png" alt="icon"/></span>
           <span class="title-item">Quản lý sản phẩm</span>
         </a>
@@ -44,10 +44,10 @@ body {
   left: 0;
   top: 90px;
   width: 15%;
-  height: 15%;
+  height: 100%;
   bottom: 0;
   background-color: #fff;
-  padding-top: 70px;
+  padding-top: 0px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
