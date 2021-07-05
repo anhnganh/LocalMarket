@@ -52,7 +52,7 @@ const routes = [
     component: RevenueManager
   },
   {
-    path:'/productManager',
+    path:'/ProductManager',
     name: ProductManager,
     component: ProductManager
   },
