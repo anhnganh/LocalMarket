@@ -19,7 +19,7 @@
         </a>
       </div>
       <div class="menu-item">
-        <a href="#">
+        <a href="/revenueManager">
           <span><img src="@/assets/doanhthu.png" alt="icon"/></span>
           <span class="title-item">Thống kê doanh thu</span>
         </a>

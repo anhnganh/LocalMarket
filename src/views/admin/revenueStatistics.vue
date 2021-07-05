@@ -1,6 +1,9 @@
 <template>
+<div>
+  <Header />
+  <Nav class="Nav" />
   <div class="revenue-content">
-    <div class="col-lg-6 revenue-details">
+    <div class="col-lg-8 revenue-details">
       <div class="page-title">
         <h2>Chi tiết</h2>
       </div>
@@ -73,7 +76,7 @@
           <tbody>
             <tr>
               <td class="product">
-                <span><img src="img/banhngai.jpg" alt=""/></span>
+                <span><img src="@/assets/localmarket.png" alt=""/></span>
                 <span class="info-product">
                   <strong>Tên sản phẩm</strong>
                 </span>
@@ -220,18 +223,29 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 <script>
-export default {};
+import Header from '@/components/sale/HeaderSale.vue'
+import Nav from '@/components/sale/Nav.vue'
+export default {
+  components:{
+    Header,
+    Nav
+  }
+};
 </script>
-<style>
-html {
-  font-size: 16px;
+<style scoped>
+
+.Nav{
+  margin-top: 20px;
 }
 .revenue-details {
   margin-right: 0px;
   height: 40rem;
   background-color: #fff;
+  font-family: Roboto;
+  margin-left: 20rem;
 }
 .table-option {
   margin-left: 1rem;

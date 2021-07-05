@@ -5,8 +5,8 @@
     </div>
     <div class="list">
       <b-row>
-        <b-col>
-          <Nav />
+        <b-col class="navMenu">
+          <Nav class="Nav" />
         </b-col>
         <b-col md="10">
           <div class="title">DANH MỤC CỦA SHOP</div>
@@ -121,7 +121,7 @@ export default {
   methods: {},
 };
 </script>
-<style>
+<style scoped>
 .managershop {
   font-family: Roboto;
   font-style: normal;
@@ -264,5 +264,11 @@ input:checked + .slider:before {
 }
 .managershop .list .add .listShop .infoShop .addProd {
   margin-right: 20px;
+}
+/* .managershop .list .navMenu {
+  /* background-color: aqua; */
+
+.managershop .list .navMenu .Nav {
+  margin-top: 70px;
 }
 </style>

@@ -530,12 +530,17 @@ body {
 }
 .listProd li .card .btn {
   background-color: #397e40;
-  margin-right: 94px;
+  margin-right: 80px;
+    
 }
 
 .listProd li .card a:hover {
   background-color: orange;
   font-family: 300;
+}
+.listProd .price {
+  color: #ee9751;
+  font-size: 18px;
 }
 
 .listProd button {
@@ -553,13 +558,12 @@ body {
   padding-bottom: 0.5%;
   line-height: 21px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
-.listProd .price {
-  color: #ee9751;
-  font-size: 18px;
-}
+
+/* ------------------- */
 .listDoDung {
-  margin-top: 20px;
+  margin-top:10px;
 }
 
 .listDoDung .title {
@@ -573,11 +577,11 @@ body {
   margin-right: 12px;
   float: left;
   list-style-type: none;
-  width: 312.01px;
+  width: auto;
   margin-top: 10px;
 }
 .listDoDung li .card {
-  height: 285px;
+  height: auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .listDoDung li .card p {
@@ -585,7 +589,7 @@ body {
 }
 .listDoDung li .card .btn {
   background-color: #397e40;
-  margin-right: 95px;
+ margin-right: 80px;
     color: #fff;
     height: 45px;
     width: 100px;
@@ -636,7 +640,7 @@ body {
   margin-right: 12px;
   float: left;
   list-style-type: none;
-  width: 312px;
+  width: auto;
   margin-top: 20px;
 }
 .suggestions li .card {
@@ -648,7 +652,7 @@ body {
 }
 .suggestions li .card .btn {
   background-color: #397e40;
-  margin-right: 95px;
+   margin-right: 80px;
    color: #fff;
     height: 45px;
     width: 100px;

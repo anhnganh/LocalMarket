@@ -6,6 +6,10 @@ import ManagerShop from '../views/admin/ManagerShop.vue'
 import Contact from '../views/user/Contact.vue'
 import productList from '../views/user/ProductList'
 import NewList from '../views/user/NewList.vue'
+import RevenueManager from '../views/admin/revenueStatistics.vue'
+import ProductManager from '../views/admin/ManageProduct.vue'
+import ShopDetail from '../views/user/Shop_Detail.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -42,7 +46,21 @@ const routes = [
     name:NewList,     
     component: NewList
   },
-
+  {
+    path:'/revenueManager',
+    name: RevenueManager,
+    component: RevenueManager
+  },
+  {
+    path:'/productManager',
+    name: ProductManager,
+    component: ProductManager
+  },
+  {
+    path:'/shopDetail',
+    name: ShopDetail,
+    component:ShopDetail
+  }
 ]
 
 const router = new VueRouter({

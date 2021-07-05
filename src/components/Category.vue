@@ -118,6 +118,7 @@ export default {};
 .row .listCate {
   margin-top: 10px;
   margin-left: 10px;
+  margin-bottom: 10px;
 }
 .row .listCate .btn {
   background-color: #fff;

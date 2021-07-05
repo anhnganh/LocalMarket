@@ -37,5 +37,5 @@ export default {
     height: 100%;
     background-attachment: fixed;
     background-color: #f1f1f1;
-}
+} 
 </style>

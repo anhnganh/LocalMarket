@@ -44,14 +44,14 @@ export default {
 </script>
 <style>
 .row .col-md-7{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .row .col-md-7 .carousel .carousel-inner .carousel-item  .img-fluid{
     height: 300px;
 }
 
 .row .col-md-5{
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: aqua;
     width: 40.666667%;
 }

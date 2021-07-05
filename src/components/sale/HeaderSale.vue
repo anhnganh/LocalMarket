@@ -8,8 +8,22 @@
       <b-col md="3"></b-col>
       <b-col md="3"></b-col>
       <b-col md="2">
-        <div><img src="@/assets/user.png" alt="" /></div>
-        <div class="user">username</div>
+  
+       <div class="user">
+      <b-button-group>
+        <b-dropdown id="dropdown-1">
+          <template #button-content>
+            <b-icon icon="person-fill" aria-hidden="true"></b-icon>
+          </template>
+          <b-dropdown-item>Trang cá nhân</b-dropdown-item>
+          <b-dropdown-item>
+            <b-icon icon="power" aria-hidden="true"></b-icon>
+            Đăng xuất</b-dropdown-item
+          >
+        </b-dropdown>
+      </b-button-group>
+      <div class="username">username</div>
+    </div>
         <div class="bell"><img src="@/assets/bell.png" alt=""></div>
       </b-col>
     </b-row>
@@ -59,9 +73,36 @@ export default {};
   /* padding-top: 20px; */
 }
 .row .col-md-2 .user{
-    padding-top: 33px;
+    padding-top: 24px;
     float: left;
     margin-right: 30px;
+}
+.row .col-md-2 .user .btn-secondary {
+  background-color: #ffffff;
+  color: #000;
+}
+.row .col-md-2 .user .btn {
+  border-radius: 100%;
+  width: 43px;
+  height: 43px;
+  border-color: #ffffff;
+  background-color: #f8f8f8;
+}
+.row .col-md-2 .user .dropdown-toggle::after {
+  display: none;
+}
+.user .b-icon.bi {
+  color: rgb(0, 0, 0);
+}
+
+.user .btn-group {
+  margin-left: 6px;
+}
+.user .btn-group .btn-group-vertical {
+  margin-left: 0px;
+}
+.user .username {
+  color: #fff;
 }
 /* .row .col-md-2 .bell{
    
