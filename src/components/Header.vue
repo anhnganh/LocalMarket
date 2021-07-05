@@ -59,6 +59,7 @@ export default {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
+ 
 }
 .logo {
   position: absolute;

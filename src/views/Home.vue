@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Header/>
+    <Header class="header" />
    <div class="container">
       <Nav />
       <Cate />
@@ -38,4 +38,10 @@ export default {
     background-attachment: fixed;
     background-color: #f1f1f1;
 } 
+.home .header{
+   position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    z-index: 10;
+}
 </style>

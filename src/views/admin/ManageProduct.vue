@@ -1,9 +1,7 @@
 <template>
   <div>
-    <div class="header">
-      <HeaderSale />
+         <HeaderSale  class="headerSale"/>
        <Nav />
-    </div>
     <div class="content-seller" id="quanlysanpham">
       <div>
         <b-tabs content-class="mt-3" justified>
@@ -1291,7 +1289,7 @@
             </div>
           </b-tab>
         </b-tabs>
-      </div>
+      </div> 
     </div>
   </div>
 </template>
@@ -1333,10 +1331,16 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 /* css for button */
-* {
-  z-index: 1;
+
+.headerSale{
+   position: -webkit-sticky;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 10;
+  
 }
 button {
   width: auto;

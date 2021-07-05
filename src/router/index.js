@@ -10,6 +10,8 @@ import RevenueManager from '../views/admin/revenueStatistics.vue'
 import ProductManager from '../views/admin/ManageProduct.vue'
 import ShopDetail from '../views/user/Shop_Detail.vue'
 
+import LoginUser from '../views/user/abc.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -60,7 +62,12 @@ const routes = [
     path:'/shopDetail',
     name: ShopDetail,
     component:ShopDetail
-  }
+  },
+  {
+    path:'/login',
+    name:LoginUser,
+    component: LoginUser
+  }  
 
 
 ]

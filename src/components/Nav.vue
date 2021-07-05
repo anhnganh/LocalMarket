@@ -28,8 +28,8 @@ export default {
 
 #nav1 .nav-link {
   flex: 0 auto;
-  height: auto;
-   height: 0px; 
+
+   height: 50px; 
   /* width: 150px;
   height: 50px; */
   /* padding-bottom: 40px; */

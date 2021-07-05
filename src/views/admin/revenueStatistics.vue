@@ -18,7 +18,7 @@
               class="form-control"
               placeholder="Tìm kiếm đơn hàng"
             />
-            <div class="input-group-append">
+            <div  class="input-group-append">
               <b-input-group-append class="button1">
                 <b-button class="button"><b-icon icon="search"/></b-button>
               </b-input-group-append>

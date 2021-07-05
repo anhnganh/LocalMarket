@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <HeaderSale />
+    <HeaderSale class="headerSale" />
     <Menu />
     <router-view/>
     
@@ -19,5 +19,10 @@ export default {
 }
 </script>
 <style>
-
+.about .headerSale{
+   position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    z-index: 10;
+}
 </style>

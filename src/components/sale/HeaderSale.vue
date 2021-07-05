@@ -40,6 +40,7 @@ export default {};
   font-size: 20px;
   height: 90px;
   background-color: #157d3f;
+  
 }
 
 .row .col-md-4 img {
