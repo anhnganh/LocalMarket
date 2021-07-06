@@ -1,4 +1,8 @@
 <template>
+  <div>
+    <div class="header">
+      <Header />
+    </div>
   <div class="container">
     <div class="page-title">
       <p>Giỏ hàng</p>
@@ -251,15 +255,28 @@
       </div>
     </div>
   </div>
+  </div>
 </template>
 <script>
+import Header from '@/components/Header.vue';
 import "@/assets/css/tableDetail.css";
 import "@/assets/css/button.css";
 
-export default {};
+export default {
+  components:{
+    Header
+  }
+
+};
 </script>
 <style scoped>
 /* shopping cart css  */
+.header{
+   position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    z-index: 10;
+}
 .line {
   width: 100%;
   height: 15px;
