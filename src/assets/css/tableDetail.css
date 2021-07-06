@@ -1,0 +1,97 @@
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: #ddd;
+    border-radius: 5px;
+} 
+::-webkit-scrollbar-thumb {
+    background-color: #666;
+    border-radius: 5px;
+}
+.table-detail {
+    position: static;
+    box-sizing: border-box;
+    width: 100%;
+    height: calc(100% - 150px);
+    background-color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 16;
+}
+
+.table-detail table{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+table thead{
+    height: 50px;
+    border-bottom: 1px solid #ddd;
+}
+thead td{
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+
+tbody tr{
+
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+
+}
+tbody td{
+    text-align: center;
+}
+tbody td:first-child{
+    text-align: center;
+}
+tbody td:last-child{
+    text-align: right;
+    padding-right: 20px;
+}
+
+table img{
+    width: 90px;
+    height: 60px;
+}
+tbody .product{
+    display: inline-flex;
+    padding: 30px 20px;
+
+}
+/* table tbody */
+tbody .info-product{
+    padding-left: 25px;
+    text-align: left;
+}
+tbody .total-detail, tbody .order-date, tbody .status{
+    text-align: center;
+}
+tbody .action{
+    text-align: right;
+}
+.quantity{
+    display: inline-flex;
+    color: #666;
+    
+}
+.quantity button{
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    font-size: 18px;
+}
+.quantity button:hover{
+    background-color: #eee;
+    color: #333;
+}
+.quantity .sl{
+    width: 40px;
+    text-align: center;
+    line-height: 26px;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    background-color: #fff;
+    font-size: 16px;
+}
