@@ -9,8 +9,10 @@ import NewList from '../views/user/NewList.vue'
 import RevenueManager from '../views/admin/revenueStatistics.vue'
 import ProductManager from '../views/admin/ManageProduct.vue'
 import ShopDetail from '../views/user/Shop_Detail.vue'
+import LoginUser from '../views/user/Login.vue'
 
-import LoginUser from '../views/user/abc.vue'
+import ProductDetail from '../views/user/Product_Detail.vue'
+import PurchaseHistory from '../views/user/PurchaseHistory.vue'
 
 Vue.use(VueRouter)
 
@@ -67,7 +69,17 @@ const routes = [
     path:'/login',
     name:LoginUser,
     component: LoginUser
-  }  
+  },
+  {
+    path: '/productdetail',
+    name: ProductDetail,
+    component:ProductDetail
+  },
+  {
+    path:'/purchHistory',
+    name:PurchaseHistory,
+    component: PurchaseHistory
+  }
 
 
 ]
