@@ -67,7 +67,6 @@ export default {
   width: 828px;
 }
  .slide .text{
-  z-index: ;
   font-family: Roboto;
   font-size: 20px;
   font-weight: 900;
