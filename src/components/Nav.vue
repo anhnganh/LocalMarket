@@ -3,7 +3,7 @@
     <b-nav>
       <b-nav-item to="/">HÔM NAY</b-nav-item>
       <b-nav-item>GIAN HÀNG</b-nav-item>
-      <b-nav-item>TIN TỨC</b-nav-item>
+      <b-nav-item to="/newlist">TIN TỨC</b-nav-item>
       <b-nav-item to="/contact" >LIÊN HỆ</b-nav-item>
     </b-nav>
   </div>

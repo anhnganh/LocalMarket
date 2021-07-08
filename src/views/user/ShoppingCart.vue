@@ -167,78 +167,7 @@
                 </div>
               </td>
             </tr>
-            <tr>
-              <td><input type="checkbox" /></td>
-              <td class="product">
-                <span><img src="@/assets/banhngai.jpg" alt=""/></span>
-                <span class="info-product">
-                  <strong>Tên sản phẩm</strong>
-                  <div style="font-size: 14px; padding-top: 5px;">
-                    kho: <strong>34</strong>
-                  </div>
-                </span>
-              </td>
-              <td>
-                40.000 đ
-              </td>
-              <td>
-                <div class="quantity">
-                  <button>+</button>
-                  <div class="sl">1</div>
-                  <button>&#8722;</button><br />
-                </div>
-                <!-- <div style="padding-top: 10px;">Có sẵn: <strong style="color:#EA7F29">45</strong> gói</div> -->
-              </td>
-              <td><strong style="color: #EA7F29;">40.000</strong> đ</td>
-              <td>
-                <div class="red">
-                  <button style=" height: 30px; padding: 0 10px;  border:0;">
-                    xóa
-                  </button>
-                </div>
-                <div class="green">
-                  <button style=" height: 30px; margin-top: 10px; border:0;">
-                    Mua ngay
-                  </button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" /></td>
-              <td class="product">
-                <span><img src="@/assets/banhngai.jpg" alt=""/></span>
-                <span class="info-product">
-                  <strong>Tên sản phẩm</strong>
-                  <div style="font-size: 14px; padding-top: 5px;">
-                    kho: <strong>34</strong>
-                  </div>
-                </span>
-              </td>
-              <td>
-                40.000 đ
-              </td>
-              <td>
-                <div class="quantity">
-                  <button>+</button>
-                  <div class="sl">1</div>
-                  <button>&#8722;</button><br />
-                </div>
-                <!-- <div style="padding-top: 10px;">Có sẵn: <strong style="color:#EA7F29">45</strong> gói</div> -->
-              </td>
-              <td><strong style="color: #EA7F29;">40.000</strong> đ</td>
-              <td>
-                <div class="red">
-                  <button style=" height: 30px; padding: 0 10px;  border:0;">
-                    xóa
-                  </button>
-                </div>
-                <div class="green">
-                  <button style=" height: 30px; margin-top: 10px; border:0;">
-                    Mua ngay
-                  </button>
-                </div>
-              </td>
-            </tr>
+        
           </tbody>
         </table>
       </div>
