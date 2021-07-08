@@ -10,7 +10,7 @@
 </template>
 <script>
 export default {
-  name: "nav",
+  name: 'nav1',
   data() {
     return {};
   },
@@ -18,25 +18,23 @@ export default {
 </script>
 <style >
 #nav1 {
-  /* height: 50px; */
+
+  top: 100px;
+  height: 50px;
   margin-top: 5px;
-  background-color: #397e40;
+  background-color:#157D3F;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  text-transform: uppercase;
 }
 
 #nav1 .nav-link {
   flex: 0 auto;
-
-   height: 50px; 
-  /* width: 150px;
-  height: 50px; */
-  /* padding-bottom: 40px; */
+  height: 50px; 
   text-align: center;
   color: #ffffff;
-  font-family: Roboto;
-  font-style: normal;
+  
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
@@ -44,6 +42,6 @@ export default {
   padding-bottom: 35px;
 }
 #nav1 a:hover {
-  background-color: orange;
+  background-color: #EA7F29;
 }
 </style>

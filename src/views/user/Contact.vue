@@ -1,9 +1,9 @@
 <template>
   <div>
-    <Header />
+    <Header class="header" />
    <div class="container">
       <Nav />
-   </div>
+  
     <section id="aa-catg-head-banner">
       <div class="aa-catg-head-banner-area">
         <div class="container">
@@ -63,6 +63,7 @@
         </div>
       </div>
     </section>
+ </div>
   </div>
 </template>
 <script>

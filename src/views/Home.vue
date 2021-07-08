@@ -3,10 +3,12 @@
     <Header class="header" />
    <div class="container">
       <Nav />
-      <Cate />
       <Slide />
-      <ListProd />
-     <Footer/>
+      <Cate />
+      <ListStore/>
+      <!-- <ListProd /> -->
+      <ListSore/>
+     <Footer class="footer"/>
    </div>
   </div>
 </template>
@@ -18,6 +20,7 @@ import Nav from '@/components/Nav.vue'
 import Cate from '@/components/Category.vue'
 import Slide from '@/components/Slide.vue'
 import ListProd from '@/components/ListProd.vue'
+import ListStore from '@/components/ListStore.vue'
 import Footer from '@/components/Footer.vue'
 export default {
   name: 'Home',
@@ -27,6 +30,7 @@ export default {
     Cate,
     Slide,
     ListProd,
+    ListStore,
     Footer
   }
 }
@@ -44,4 +48,5 @@ export default {
     top:0;
     z-index: 10;
 }
+
 </style>

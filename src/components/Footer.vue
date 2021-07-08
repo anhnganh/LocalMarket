@@ -2,7 +2,7 @@
 
        <div class="footer">
         <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-11">
           <div class="aa-footer-top-area">
             <div class="row">
               <div class="col-md-4 col-sm-6">
@@ -62,6 +62,7 @@ export default {};
 .footer{
     margin-top: 10px;
     background-color: #fff;
+    height: auto;
 }
 
 .row .col-md-4 .aa-footer-widget {

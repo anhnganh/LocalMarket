@@ -1,8 +1,6 @@
 <template>
-  <div>
-    <div>
-      <Header />
-    </div>
+  <div class="newlist">
+      <Header class="header" />
     <div class="container">
       <Nav />
       <Category />
@@ -34,28 +32,41 @@
           </div>
         </div>
       </div>
-    </div>
+       <Footer class="footerNewList"/>
+    </div>    
   </div>
 </template>
 <script>
 import Header from "@/components/Header.vue";
 import Nav from "@/components/Nav.vue";
 import Category from "@/components/Category.vue";
+import Footer from '@/components/Footer.vue'
 export default {
   components: {
     Header,
     Nav,
     Category,
+    Footer
   },
 };
 </script>
 <style>
+.newlist .header{
+    position: sticky;
+    top:0;
+    z-index: 10;
+}
+.container .footerNewList{
+  background-color:#f1f1f1 ;
+  margin-top: 30px;
+}
 #slideshow {
   font-family: Roboto;
   overflow: hidden;
   height: 510px;
   width: 928px;
   margin: 0 auto;
+  /* background-color:#f1f1f1 ; */
 }
 .slide-wrapper {
   width: 2912px;
@@ -88,5 +99,8 @@ export default {
   80% {
     margin-left: -1456px;
   }
+}
+.footer{
+  background-color: #fff;
 }
 </style>

@@ -1,6 +1,58 @@
 <template>
-  <div>
-    <div class="">
+  <div id="categorys">
+    <div class="list-category">
+      <div class="row">
+        <div class="col-xl-2 col-md-3">
+          <div class="item-category">
+            <a href="">
+              <div class="image-category" style="background-image: url('http://tapchicongthuong.vn/images/20/11/8/gia-sieu-thi4.jpg');"></div>
+              <div class="title-category">rau củ quả </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-3">
+          <div class="item-category">
+            <a href="">
+              <div class="image-category" style="background-image: url('http://tapchicongthuong.vn/images/20/11/8/gia-sieu-thi4.jpg');"></div>
+              <div class="title-category">rau củ quả </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-3">
+          <div class="item-category">
+            <a href="">
+              <div class="image-category" style="background-image: url('http://tapchicongthuong.vn/images/20/11/8/gia-sieu-thi4.jpg');"></div>
+              <div class="title-category">rau củ quả </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-3">
+          <div class="item-category">
+            <a href="">
+              <div class="image-category" style="background-image: url('http://tapchicongthuong.vn/images/20/11/8/gia-sieu-thi4.jpg');"></div>
+              <div class="title-category">rau củ quả </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-3">
+          <div class="item-category">
+            <a href="">
+              <div class="image-category" style="background-image: url('http://tapchicongthuong.vn/images/20/11/8/gia-sieu-thi4.jpg');"></div>
+              <div class="title-category">rau củ quả </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-3">
+          <div class="item-category">
+            <a href="">
+              <div class="image-category" style="background-image: url('http://tapchicongthuong.vn/images/20/11/8/gia-sieu-thi4.jpg');"></div>
+              <div class="title-category">rau củ quả </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="">
       <b-container class="bv-example-row">
         <b-row>
           <b-col cols="12" md="12">
@@ -91,14 +143,59 @@
         </b-row>
         
       </b-container>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
 export default {};
 </script>
-<style>
-.row {
+<style >
+
+
+.list-category{
+  height: 200px;
+  /* background-color: #fff; */
+}
+.col-md-3{
+  padding: 30px 50px;
+}
+.item-category{
+  height: 150px;
+  /* width: 100%; */
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #157D3F;
+  box-shadow: 2px 2px 2px #aaa;
+  background-color: #fff;
+}
+.item-category a{
+  text-decoration: none;
+  text-align: center;
+  color: #222;
+}
+.item-category a:hover{
+  color: #222;
+}
+.image-category{
+  width: 100%;
+  height: 70px;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.title-category{
+  height: 50px;
+  align-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+}
+/* .row {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -132,6 +229,6 @@ export default {};
   margin-right: 0px;
   display: flex;
   justify-content: center;
-}
+} */
 
 </style>
