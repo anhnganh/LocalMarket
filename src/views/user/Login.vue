@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <b-row>
-      <b-col md="6">
+      <b-col md="6" class="left">
         <div class="title">LOCAL MARKET</div>
         <img id="cart-logo" src="@/assets/cart_big.png" alt="app-logo" />
         <img id="logo" src="@/assets/logo.png" alt="app-logo" />
@@ -14,12 +14,8 @@
           </p>
           <div class="login-lg">
             <a href="#" class="zalo-login">
-              <img
-                src="@/assets/zalo.png"
-                class="icon"
-                alt="zalo-icon"
-                id="zalo-icon"
-            /></a>  
+              <img src="@/assets/zalo.png" class="icon" alt="zalo-icon" id="zalo-icon"/>
+            </a>  
 
             <a href="#" class="facebook-login">
               <img
@@ -33,9 +29,6 @@
         </div>
       </b-col>
     </b-row> 
-
-
-
        <!-- <div class="col-lg-6 h-100"> 
         <p id="app-name">LOCAL MARKET</p>
         <img id="cart-logo" src="img/cart_big.png" alt="app-logo">
@@ -62,28 +55,30 @@
 <script>
 export default {};
 </script>
-<style >
-
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
 .login{
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background-color: #157d3f;
-  height: 830px;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 .login .row .title{
      width: fit-content;
     font-size: 60px;
     color: #fff;
-    margin-left: 190px;
+    margin-left: 200px;
     margin-top: 110px;
-    font-family: Roboto;
+    font-family: 'Salsa', cursive;
     height: fit-content;  
 }
 
 .login .row #cart-logo{
-position: absolute;
+    position: absolute;
     width: 430px;
     height: 320px;
-    left: 280px;
+    left: 250px;
     top: 290px;
 }
 .login .row #logo{
@@ -95,17 +90,17 @@ position: absolute;
   
 }
 .login .row .login-form{
-  position: absolute;
+    position: absolute;
     width: 450px;
     height: 450px;
     right: 200px;
-    top: 100px;
+    top: calc(50% - 225px);
     background: #ffffff;
     border: 2px solid #157d3f;
     box-sizing: border-box;
     border-radius: 15px;
     z-index: 1;
-box-shadow: 14px 14px 14px 14px rgba(0, 0, 0, 0.25);
+    box-shadow: 14px 14px 14px 14px rgba(0, 0, 0, 0.25);
 }
 
 .login .row .login-form p:first-child{
@@ -134,12 +129,19 @@ box-shadow: 14px 14px 14px 14px rgba(0, 0, 0, 0.25);
     z-index: 1;
     box-shadow: 2px 2px 2px #bbb;
 }
+
 .login .row .login-form  #zalo-icon {
     border: 3px solid #0180c7;
     box-sizing: border-box;
     left: 80px;
     z-index: 1;
     box-shadow: 2px 2px 2px #bbb;
+}
+.login .row .login-form #facebook-icon:hover{
+    box-shadow: 4px 4px 4px #bbb;
+}
+.login .row .login-form #zalo-icon:hover{
+    box-shadow: 4px 4px 4px #bbb;
 }
 .login .row .login-form  .login-lg{
     position: absolute;
