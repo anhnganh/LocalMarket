@@ -44,7 +44,7 @@
                   </template>
                   <b-dropdown-item>Trang ca nhan</b-dropdown-item>
                   <b-dropdown-item>Lich su mua hang</b-dropdown-item>
-                  <b-dropdown-item>
+                  <b-dropdown-item @click="logout">
                     <b-icon icon="power" aria-hidden="true"></b-icon>
                     Dang xuat</b-dropdown-item
                   >
@@ -93,8 +93,19 @@
   </div> -->
 </template>
 <script>
+import {mapActions, mapGetters} from 'vuex';
 export default {
-  components: {},
+  methods:{
+    ...mapActions({
+      logoutUser: 'user/logoutUser',
+    }),
+    logout(){
+      this.logoutUser()
+        .then(()=>{
+            this.$router.push({name: 'Login'});
+        })
+    }
+  }
 };
 </script>
 <style>
