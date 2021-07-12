@@ -1,32 +1,62 @@
 <template>
-<div id="header">
-  <div class="container">
-    <div class="header-left">
-      <span class="menu-hidden"><img src="../assets/menu.png" alt=""></span>
-      <span class="logo"><router-link to="/abc"><img src="../assets/localmarket.png" alt=""></router-link></span>
-      <span class="btn-banhang"><router-link to="/nguoiban">Bán hàng</router-link></span>
-      
-      
-    </div>
-    <div class="header-center">
-      <div class="search-bar">
-        <input type="text" name="" id="" placeholder="Tìm kiếm sản phẩm, gian hàng...">
-        <button><img src="../assets/search.png" alt=""></button>
+  <div id="header">
+    <div class="container">
+      <div class="header-left">
+        <span class="menu-hidden"><img src="../assets/menu.png" alt=""/></span>
+        <span class="logo"
+          ><router-link to="/abc"
+            ><img src="../assets/localmarket.png" alt=""/></router-link
+        ></span>
+        <span class="btn-banhang"
+          ><router-link to="/nguoiban">Bán hàng</router-link></span
+        >
       </div>
-    </div>
-    <div class="header-right">
-      <div class="icon-cart"><router-link to="#"><img src="../assets/cart.png" alt=""></router-link></div>
-      <div class="icon-notification"><router-link to="#"><img src="../assets/bell.png" alt=""></router-link></div>
-      <div class="header-user">
-        <router-link to="#">
-          <span class="icon-user"><router-link to="#"><img src="../assets/user.png" alt=""></router-link></span>
-          <span class="username">username</span>
-        </router-link>
+      <div class="header-center">
+        <div class="search-bar">
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Tìm kiếm sản phẩm, gian hàng..."
+          />
+          <button><img src="../assets/search.png" alt="" /></button>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="icon-cart">
+          <router-link to="#"
+            ><img src="../assets/cart.png" alt=""
+          /></router-link>
+        </div>
+        <div class="icon-notification">
+          <router-link to="#"
+            ><img src="../assets/bell.png" alt=""
+          /></router-link>
+        </div>
+        <div class="header-user">
+          <router-link to="#">
+            <span class="icon-user"
+              ><router-link to="#">
+                <!-- <img src="../assets/user.png" alt="" /> -->
+                <b-dropdown id="dropdown-1">
+                  <template #button-content>
+                    <b-icon icon="person-fill" aria-hidden="true"></b-icon>
+                  </template>
+                  <b-dropdown-item>Trang ca nhan</b-dropdown-item>
+                  <b-dropdown-item>Lich su mua hang</b-dropdown-item>
+                  <b-dropdown-item>
+                    <b-icon icon="power" aria-hidden="true"></b-icon>
+                    Dang xuat</b-dropdown-item
+                  >
+                </b-dropdown>
+              </router-link>
+            </span>
+            <span class="username">username</span>
+          </router-link>
+        </div>
       </div>
     </div>
   </div>
-  
-</div>
   <!-- <div id="header">
     <div class="logo">
       <img src="../assets/localmarket.png" style="width:150px" alt="" />
@@ -56,17 +86,7 @@
     </div>
     <div class="user1">
       <b-button-group>
-        <b-dropdown id="dropdown-1">
-          <template #button-content>
-            <b-icon icon="person-fill" aria-hidden="true"></b-icon>
-          </template>
-          <b-dropdown-item>Trang ca nhan</b-dropdown-item>
-          <b-dropdown-item>Lich su mua hang</b-dropdown-item>
-          <b-dropdown-item>
-            <b-icon icon="power" aria-hidden="true"></b-icon>
-            Dang xuat</b-dropdown-item
-          >
-        </b-dropdown>
+        c
       </b-button-group>
       <div class="username">username</div>
     </div>
@@ -78,114 +98,109 @@ export default {
 };
 </script>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-#header .container{
-  font-family: 'Roboto', sans-serif;
+#header .container {
+  font-family: "Roboto", sans-serif;
   width: 100%;
   height: 100%;
-  background-color: #157D3F;
+  background-color: #157d3f;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
 }
-.header-left{
+.header-left {
   display: flex;
   flex: 1;
 }
-.logo{
+.logo {
   display: flex;
 }
-.logo img{
+.logo img {
   width: 150px;
   height: auto;
 }
-.menu-hidden{
+.menu-hidden {
   display: flex;
   align-items: center;
   margin-right: 20px;
 }
-.menu-hidden img{
+.menu-hidden img {
   width: 30px;
   height: 30px;
 }
-.btn-banhang{
-  
+.btn-banhang {
   display: flex;
   align-items: center;
   padding-left: 40px;
-  
 }
-.btn-banhang a{
-  
+.btn-banhang a {
   text-decoration: none;
-  background-color: #EA7F29;
+  background-color: #ea7f29;
   border: 2px solid #fff;
   color: #fff;
   font-size: 18px;
   font-weight: bold;
   padding: 5px 10px;
 }
-.btn-banhang a:hover{
+.btn-banhang a:hover {
   box-shadow: 2px 2px 2px #999;
   color: #fff;
 }
-.header-center{
+.header-center {
   display: flex;
   flex: 1;
   width: 100%;
 }
-.search-bar{
+.search-bar {
   display: inline-flex;
   justify-content: center;
 }
-.search-bar input{
+.search-bar input {
   width: 450px;
   height: 40px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   outline: none;
   border: 0;
-  padding-left:20px;
+  padding-left: 20px;
   font-size: 16px;
   box-shadow: 1px 1px 1px #aaa inset;
 }
-.search-bar::placeholder{
+.search-bar::placeholder {
   color: #bbb;
 }
-.search-bar button{
+.search-bar button {
   width: 60px;
   height: 40px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   box-sizing: border-box;
-  background-color: #157D3F;
+  background-color: #157d3f;
   border: 2px solid #fff;
 }
-.search-bar button img{
+.search-bar button img {
   width: 25px;
   height: auto;
-  
 }
 
-div .header-right{
+div .header-right {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   flex: 1;
-  
 }
-.header-user a{
+.header-user a {
   font-size: 16px;
-  color: #fff; 
+  color: #fff;
   text-decoration: none;
 }
-.header-user a:hover{
+.header-user a:hover {
   text-decoration: none;
   color: #fff;
 }
-.header-user .username{
+.header-user .username {
   padding-left: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -193,77 +208,74 @@ div .header-right{
   font-weight: normal;
 }
 
-.icon-cart img, .icon-notification img{
+.icon-cart img,
+.icon-notification img {
   margin-left: 40px;
   width: 30px;
   height: auto;
-
 }
-.icon-user img{
+.icon-user img {
   margin-left: 40px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
 }
 
-
-@media (min-width: 768px){
-  .menu-hidden{
+@media (min-width: 768px) {
+  .menu-hidden {
     display: none;
   }
 }
-@media (min-width: 1000px) and (max-width: 1200px){
-  .icon-notification{
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .icon-notification {
     display: none;
   }
-  .search-bar input{
+  .search-bar input {
     width: 350px;
   }
-  .btn-banhang{
+  .btn-banhang {
     padding-left: 10px;
   }
 }
-@media (min-width: 768px) and (max-width: 1000px){
-  .icon-notification{
+@media (min-width: 768px) and (max-width: 1000px) {
+  .icon-notification {
     display: none;
   }
-  .icon-cart{
+  .icon-cart {
     display: none;
   }
-  .btn-banhang{
+  .btn-banhang {
     display: none;
   }
-  .search-bar input{
+  .search-bar input {
     width: 250px;
   }
 }
-@media (max-width: 768px){
-  .logo img{
+@media (max-width: 768px) {
+  .logo img {
     width: 100px;
     height: auto;
     margin-right: 20px;
   }
-  .icon-notification{
+  .icon-notification {
     display: none;
   }
-  .icon-cart{
+  .icon-cart {
     display: none;
   }
-  .btn-banhang{
+  .btn-banhang {
     display: none;
   }
-  .header-user{
+  .header-user {
     display: none;
   }
-  .search-bar input{
+  .search-bar input {
     width: 250px;
   }
-  .menu-hidden{
+  .menu-hidden {
     display: inline-flex;
   }
-  
 }
-
 
 /* #header {
   padding-left: 212px;

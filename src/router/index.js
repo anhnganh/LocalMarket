@@ -2,17 +2,17 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 // import About from '../views/NguoiBan.vue'
-import ManagerShop from '../views/admin/ManagerShop.vue'
-import Contact from '../views/user/Contact.vue'
-import productList from '../views/user/ProductList'
-import NewList from '../views/user/NewList.vue'
-import RevenueManager from '../views/admin/revenueStatistics.vue'
-import ProductManager from '../views/admin/ManageProduct.vue'
-import ShopDetail from '../views/user/Shop_Detail.vue'
-import LoginUser from '../views/user/Login.vue'
+import ManagerShop from "../views/admin/ManagerShop.vue";
+import Contact from "../views/user/Contact.vue";
+import productList from "../views/user/ProductList";
+import NewList from "../views/user/NewList.vue";
+import RevenueManager from "../views/admin/revenueStatistics.vue";
+import ProductManager from "../views/admin/ManageProduct.vue";
+import ShopDetail from "../views/user/Shop_Detail.vue";
+import LoginUser from "../views/user/Login.vue";
 import ShoppingCart from "../views/user/ShoppingCart.vue";
-import ProductDetail from '../views/user/Product_Detail.vue'
-import PurchaseHistory from '../views/user/PurchaseHistory.vue'
+import ProductDetail from "../views/user/Product_Detail.vue";
+import PurchaseHistory from "../views/user/PurchaseHistory.vue";
 
 Vue.use(VueRouter);
 
@@ -29,6 +29,11 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import("@/views/NguoiBan.vue"),
+  },
+  {
+    path: "/login/github/callback",
+    name: "Login",
+    component: () => import("@/views/user/LoginFacebook.vue")
   },
   {
     path: "/managershop",
@@ -66,27 +71,26 @@ const routes = [
     component: ShopDetail,
   },
   {
-    path:'/login',
-    name:LoginUser,
-    component: LoginUser
+    path: "/login",
+    name: LoginUser,
+    component: LoginUser,
   },
   {
-    path: '/productdetail',
+    path: "/productdetail",
     name: ProductDetail,
-    component:ProductDetail
+    component: ProductDetail,
   },
   {
-    path:'/purchHistory',
-    name:PurchaseHistory,
-    component: PurchaseHistory
+    path: "/purchHistory",
+    name: PurchaseHistory,
+    component: PurchaseHistory,
   },
   {
     path: "/shoppingCart",
     name: "ShoppingCart",
     component: ShoppingCart,
   },
-
-]
+];
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,

@@ -19,7 +19,7 @@ import Header from '@/components/Header.vue'
 import Nav from '@/components/Nav.vue'
 import Cate from '@/components/Category.vue'
 import Slide from '@/components/Slide.vue'
-import ListProd from '@/components/ListProd.vue'
+
 import ListStore from '@/components/ListStore.vue'
 import Footer from '@/components/Footer.vue'
 export default {
@@ -29,7 +29,6 @@ export default {
     Nav,
     Cate,
     Slide,
-    ListProd,
     ListStore,
     Footer
   }

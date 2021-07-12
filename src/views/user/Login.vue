@@ -17,7 +17,7 @@
               <img src="@/assets/zalo.png" class="icon" alt="zalo-icon" id="zalo-icon"/>
             </a>  
 
-            <a href="#" class="facebook-login">
+            <a href="#" @click="loginGithub" class="facebook-login">
               <img
                 src="@/assets/facebook.png"
                 class="icon"
@@ -29,31 +29,36 @@
         </div>
       </b-col>
     </b-row> 
-       <!-- <div class="col-lg-6 h-100"> 
-        <p id="app-name">LOCAL MARKET</p>
-        <img id="cart-logo" src="img/cart_big.png" alt="app-logo">
-        <img id="logo" src="img/logo.png" alt="app-logo">
-        <div class="line"></div>
-    </div>
-    <div class="col-lg-6 h-100">
-        <div class="login-form">
-            <p>
-                ĐĂNG NHẬP
-            </p>
-            <div class="login-lg">
-                <a href="#" class="zalo-login">
-                    <img src="img/zalo.png" class="icon" alt="zalo-icon" id="zalo-icon"></a>
-                <a href="#" class="facebook-login">
-                    <img src="img/facebook.png" class="icon" alt="facebook-icon" id="facebook-icon">
-                </a>
-            </div>
 
-        </div>
-    </div> -->
   </div>
 </template>
 <script>
-export default {};
+import { mapGetters } from 'vuex'
+import { mapActions } from 'vuex'
+export default {
+  
+  computed:{
+    ...mapGetters({
+        loggedIn: 'user/loggedIn'
+    })
+  },
+  
+  methods:{
+    ...mapActions({
+      loginGithubAction: 'user/loginGithub'
+    }),
+    loginGithub(){
+      this.loginGithubAction().then((resp)=>{
+        if(resp.data.url){
+          window.location.href = resp.data.url
+        }
+      })
+    }
+  },
+  created () {
+    console.log(this.$store.state);
+  }
+};
 </script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
