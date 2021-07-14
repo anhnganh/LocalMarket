@@ -37,20 +37,20 @@
           <router-link to="#">
             <span class="icon-user"
               ><router-link to="#">
-                <!-- <img src="../assets/user.png" alt="" /> -->
-                <b-dropdown id="dropdown-1">
-                  <template #button-content>
-                    <b-icon icon="person-fill" aria-hidden="true"></b-icon>
-                  </template>
-                  <b-dropdown-item>Trang ca nhan</b-dropdown-item>
-                  <b-dropdown-item>Lich su mua hang</b-dropdown-item>
-                  <b-dropdown-item @click="logout">
-                    <b-icon icon="power" aria-hidden="true"></b-icon>
-                    Dang xuat</b-dropdown-item
-                  >
-                </b-dropdown>
+                <img src="../assets/user.png" alt="" />
+                
               </router-link>
             </span>
+            <b-dropdown id="dropdown-1">
+              <!-- <template #button-content>
+                <b-icon icon="person-fill" aria-hidden="true"></b-icon>
+              </template> -->
+              <b-dropdown-item>Trang ca nhan</b-dropdown-item>
+              <b-dropdown-item>Lich su mua hang</b-dropdown-item>
+              <b-dropdown-item @click="logout">
+                <b-icon icon="power" aria-hidden="true"></b-icon>
+                Dang xuat</b-dropdown-item>
+            </b-dropdown>
             <span class="username">username</span>
           </router-link>
         </div>
@@ -218,18 +218,30 @@ div .header-right {
   white-space: nowrap;
   font-weight: normal;
 }
-
+.header-user button{
+  width: 30px;
+  height: 30px;
+  background: #157d3f;
+  border: 0;
+}
 .icon-cart img,
 .icon-notification img {
   margin-left: 40px;
   width: 30px;
   height: auto;
 }
+
+
 .icon-user img {
   margin-left: 40px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
+}
+.icon-user svg{
+  padding: 0;
+  width: 30px;
+  height: 30px;
 }
 
 @media (min-width: 768px) {

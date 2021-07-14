@@ -13,7 +13,7 @@ import LoginUser from "../views/user/Login.vue";
 import ShoppingCart from "../views/user/ShoppingCart.vue";
 import ProductDetail from "../views/user/Product_Detail.vue";
 import PurchaseHistory from "../views/user/PurchaseHistory.vue";
-
+import User from "../views/user/User.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -90,6 +90,12 @@ const routes = [
     name: "ShoppingCart",
     component: ShoppingCart,
   },
+  {
+    path: "/user",
+    name: "User",
+    component: User,
+  },
+
 ];
 const router = new VueRouter({
   mode: "history",
