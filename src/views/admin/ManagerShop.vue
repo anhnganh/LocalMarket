@@ -9,8 +9,8 @@
           <Nav class="Nav" />
         </b-col>
         <b-col md="10">
-          <div class="title">DANH MỤC CỦA SHOP</div>
-          <div class="add">
+          <!-- <div class="title">DANH MỤC CỦA SHOP</div> -->
+          <!-- <div class="add">
             <b-button @click="show2 = !show2">
               <b-icon icon="plus"></b-icon>
               Thêm Shop
@@ -98,6 +98,110 @@
                 </tbody>
               </table>
             </div>
+          </div> -->
+          <div class="schedule">
+            <div class="content-title">
+                <ul>
+                    <li><span id="all" ><a href="#">Hồ sơ shop</a></span></li>
+                    <li><span id="wait-confirm" class="choose"><a href="#">Lên lịch</a></span></li>
+                </ul>
+            </div>
+            <div class="all-green btn-create-schedule"><button> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16"><path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/><path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/></svg> Tạo lịch</button></div>
+            <div class="create-schedule" hidden>
+                <div class="frost"></div>
+                <div class="box-create-schedule">
+                    <div class="all-red btn-close-schedule"><button>X</button></div>
+                    <h4 style="font-weight: bold; padding-top: 10px; padding-bottom:10px;">Tạo lịch bán hàng</h4>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="nameproduct">Tiêu đề (*)</label>
+                                <input type="text" class="form-control" id="nameproduct" name="nameproduct" placeholder="Tên lịch" require>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="start-sell">Thời gian bắt đầu bán (*)</label>
+                                <input type="datetime-local" class="form-control" id="start-sell">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="description">Mô tả (*)</label>
+                                <textarea class="form-control" id="description" rows="5" name="description" require></textarea>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="end-sell">Thời gian kết thúc bán (*)</label>
+                                    <input type="datetime-local" class="form-control" id="end-sell">
+                                </div>
+                                <div class="form-group">
+                                    <label for="time-ship">Thời gian ship (*)</label>
+                                    <input type="datetime-local" class="form-control" id="time-ship">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="all-green" style="text-align: center; margin-top:10px;"><button type="submit">Lưu lại</button></div>
+                    </form>
+                </div>
+            </div>
+            <div class="table-schedule">
+                <table>
+                    <thead>
+                        <tr>
+                            <td style="width: 10%;">Tên lịch</td>
+                            <td style="width: 20%;">Mô tả</td>
+                            <td style="width: 18%;">Thời gian kết thúc</td>
+                            <td style="width: 18%;">Thời gian kết thúc</td>
+                            <td style="width: 18%;">Thời gian ship</td>
+                            <td>Thao tác</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span><strong>Thứ 2</strong></span>
+                            </td>
+                            <td>
+                                <p>abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc</p>
+                            </td>
+                            <td>
+                                <span>07:00 29/12/2029</span>
+                            </td>
+                            <td>
+                                <span>12:00 29/12/2029</span>
+                            </td>
+                            <td>
+                                <span>12:00 29/12/2029</span>
+                            </td>
+                            <td>
+                                <span class="all-green"><button title="Đóng">Đang mở</button></span>
+                                <span class="all-red"><button>Xóa</button></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span><strong>Thứ 2</strong></span>
+                            </td>
+                            <td>
+                                <p>abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc abc</p>
+                            </td>
+                            <td>
+                                <span>07:00 29/12/2029</span>
+                            </td>
+                            <td>
+                                <span>12:00 29/12/2029</span>
+                            </td>
+                            <td>
+                                <span>12:00 29/12/2029</span>
+                            </td>
+                            <td>
+                                <span class="all-green"><button title="Mở" style="background-color: #EA7F29;">Đóng</button></span>
+                                <span class="all-red"><button>Xóa</button></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
           </div>
         </b-col>
       </b-row>
@@ -122,6 +226,19 @@ export default {
 };
 </script>
 <style scoped>
+a{
+  color: #333;
+  text-decoration: none;
+}
+/* ::-webkit-scrollbar {
+    width: 8px;
+    background-color: #ddd;
+    border-radius: 5px;
+} 
+::-webkit-scrollbar-thumb {
+    background-color: #666;
+    border-radius: 5px;
+} */
 .managershop {
   font-family: Roboto;
   font-style: normal;
@@ -267,5 +384,94 @@ input:checked + .slider:before {
 }
 /* .managershop .list .navMenu {
   /* background-color: aqua; */
+/* create schedule */
+.btn-create-schedule{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+    padding-right: 30px;
+}
+.create-schedule{
+    z-index: 3;
+}
+.frost{
+    background-color: rgba(1, 1, 1, 0.6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.box-create-schedule{
+    position: fixed;
+    width: 800px;
+    height: 500px;
+    top: calc(50% - 250px);
+    left: calc(50% - 400px);
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.btn-close-schedule{
+    margin-top: 15px;
+    margin-right: 15px;
+    text-align: right;
+}
+/* .table-schedule{
+    position: absolute;
+    box-sizing: border-box;
+    top: 220px;
+    left: 250px;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow-y: scroll;
+    font-size: 14px;
+} */
+.table-schedule tbody td{
+    text-align: center;
+    padding: 20px 10px;
+}
+.table-schedule tbody td p{
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+.table-schedule tbody td:last-child{
+    float: right;
+}
+.content-title{
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    display: inline-flex;
+    justify-content: space-between;
+}
 
+ul{
+    padding-left: 20px;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    /* margin-right: 40px; */
+    padding-top: 20px;
+}
+ul li a{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+li .choose a{
+    color: #157D3F;
+    border-bottom: 3px solid #157D3F;
+    padding-bottom: 6px;
+    font-weight: bold;
+}
+
+/* end create schedule */
 </style>

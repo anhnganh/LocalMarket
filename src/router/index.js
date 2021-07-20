@@ -13,6 +13,7 @@ import LoginUser from "../views/user/Login.vue";
 import ShoppingCart from "../views/user/ShoppingCart.vue";
 import ProductDetail from "../views/user/Product_Detail.vue";
 import PurchaseHistory from "../views/user/PurchaseHistory.vue";
+import Schedule from "../views/admin/Schedule.vue";
 import User from "../views/user/User.vue";
 Vue.use(VueRouter);
 
@@ -79,6 +80,11 @@ const routes = [
     path: "/productdetail",
     name: ProductDetail,
     component: ProductDetail,
+  },
+  {
+    path: "/schedule",
+    name: Schedule,
+    component: Schedule,
   },
   {
     path: "/purchHistory",
